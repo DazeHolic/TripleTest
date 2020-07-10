@@ -1,0 +1,22 @@
+
+RollerAgent为Agent脚本
+main.cs为控制台启动测试该游戏入口文件
+
+
+Unity Agent配置：
+
+# 游戏为7行7列，每个元素有3种可能(采用独热编码 7 * 7 * 3 = 147)
+Vector Observation 
+	space size --> 147
+
+# 指定某行某列的元素进行某操作
+Vector Action
+	space type --> discrete
+	branches size --> 3
+		branches 0 size -->7			# 行
+		branches 1 size -->7			# 列
+		branches 2 size -->4			# 操作(上下左右)
+
+
+
+
